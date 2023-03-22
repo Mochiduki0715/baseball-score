@@ -1,5 +1,5 @@
 <template>
-  <button type="button" class="w-full focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+  <button type="button" :disabled="isDisable" class="rounded-lg text-sm text-center">
     {{ text }}
   </button>
 </template>
@@ -7,10 +7,12 @@
 <script setup lang="ts">
 
 interface Props {
-  text: string
+  text: string,
+  isDisable?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  text: ''
+  text: '',
+  isDisable: false
 })
 </script>

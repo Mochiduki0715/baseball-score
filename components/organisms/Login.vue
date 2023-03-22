@@ -15,7 +15,7 @@
           <CheckBox id="remember" text="Remember me" />
           <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
         </div>
-        <button type="button" class="w-full bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Login</button>
+        <Button text="Login" :is-disable="false" class="w-full bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium py-2.5"/>
         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
           <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
         </p>
@@ -27,4 +27,5 @@
 <script setup lang="ts">
 import InputLabel from '@/components/molecules/InputLabel.vue'
 import CheckBox from '@/components/molecules/CheckBox.vue'
+import Button from '@/components/atoms/Button.vue'
 </script>
