@@ -13,11 +13,13 @@
         <InputLabel text="password" id="password" type="password" />
         <div class="flex items-center justify-between">
           <CheckBox id="remember" text="Remember me" />
-          <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
+          <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-primary-500">Forgot password?</a>
         </div>
         <Button text="Login" :is-disable="false" class="w-full bg-blue-600 focus:ring-4 focus:outline-none focus:ring-primary-300 text-white font-medium py-2.5"/>
-        <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-          <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
+        <p>
+          <NuxtLink class="text-sm font-light text-blue-600 hover:underline" to="signup">
+            sign up
+          </NuxtLink>
         </p>
       </form>
     </div>
