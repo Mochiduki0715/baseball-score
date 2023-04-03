@@ -1,7 +1,7 @@
 <template>
 <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
   <a href="#" class="flex items-center mb-6 text-2xl font-semibold">
-    <!-- Baseball Score -->
+    Baseball Score
   </a>
   <div class="w-full rounded-lg dark:border md:mt-0 sm:max-w-md xl:p-0">
     <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
